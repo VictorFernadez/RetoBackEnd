@@ -19,7 +19,7 @@ public class SwaggerConfig {
     public Docket getDocket() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(getApiInfo())
-                .select().apis(RequestHandlerSelectors.basePackage("com.victor.fernandez.user.controller"))
+                .select().apis(RequestHandlerSelectors.basePackage("com.victor.fernandez.client.controller"))
                 .paths(PathSelectors.any()).build()
                 .useDefaultResponseMessages(false);
     }
