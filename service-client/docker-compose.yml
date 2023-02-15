@@ -1,0 +1,7 @@
+version: "3"
+services:
+  service-client:
+    image: service-client:latest
+    container_name: service-client
+    ports:
+      - "8002:8002"
